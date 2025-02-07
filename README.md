@@ -1,276 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kennedy Maina's Portfolio</title>
-  <style>
-    /* General Styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kennedy Maina | Data Analyst</title>
+    <meta name="description" content="Data Analyst specializing in SQL, Python, and Data Visualization with expertise in transforming raw data into actionable insights">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2A5C82;
+            --secondary: #34ADAD;
+            --accent: #FF6B6B;
+        }
 
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f4f4f4;
-      color: #333;
-    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
 
-    header {
-      background: #333;
-      color: #fff;
-      padding: 1rem 0;
-    }
+        body {
+            line-height: 1.6;
+            background: #f9f9f9;
+        }
 
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
+        .hero {
+            text-align: center;
+            padding: 6rem 2rem;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
+            color: white;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+        }
 
-    .logo {
-      font-size: 1.5rem;
-      font-weight: bold;
-    }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 1rem auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
 
-    .nav-links {
-      list-style: none;
-      display: flex;
-    }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+        }
 
-    .nav-links li {
-      margin-left: 20px;
-    }
+        .skill-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            text-align: center;
+        }
 
-    .nav-links a {
-      text-decoration: none;
-      color: #fff;
-      transition: color 0.3s;
-    }
+        .skill-card:hover {
+            transform: translateY(-10px);
+        }
 
-    .nav-links a:hover {
-      color: #ff6347;
-    }
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
 
-    /* Hero Section */
-    #hero {
-      background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-      color: #fff;
-    }
+        .project-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+        }
 
-    .hero-content h1 {
-      font-size: 3rem;
-    }
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
 
-    .hero-content p {
-      font-size: 1.5rem;
-      margin-bottom: 20px;
-    }
+        .project-info {
+            padding: 1.5rem;
+        }
 
-    .btn {
-      background: #ff6347;
-      color: #fff;
-      padding: 10px 20px;
-      text-decoration: none;
-      border-radius: 5px;
-      transition: background 0.3s;
-    }
+        .contact {
+            padding: 4rem 2rem;
+            background: var(--primary);
+            color: white;
+            text-align: center;
+        }
 
-    .btn:hover {
-      background: #e95a43;
-    }
+        form {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
 
-    /* Sections */
-    .section {
-      padding: 50px 20px;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+        input, textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border: none;
+            border-radius: 5px;
+        }
 
-    .section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
+        button {
+            background: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
 
-    .skills-grid, .project-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
+        button:hover {
+            background: #ff5252;
+        }
 
-    .skill-card, .project-card {
-      background: #fff;
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      text-align: center;
-    }
-
-    .project-card img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 10px;
-    }
-
-    /* Contact Form */
-    #contact-form input, #contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-
-    #contact-form button {
-      background: #ff6347;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    #contact-form button:hover {
-      background: #e95a43;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #333;
-      color: #fff;
-    }
-  </style>
+        @media (max-width: 768px) {
+            .hero {
+                padding: 4rem 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <!-- Navbar -->
-  <header>
-    <nav>
-      <div class="logo">Kennedy Maina</div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header class="hero">
+        <img src="assets/your-photo.jpg" alt="Kennedy Maina" class="profile-img">
+        <h1>Kennedy Maina</h1>
+        <p>Data Analyst | SQL | Python | Power BI</p>
+        <div style="margin: 1.5rem 0;">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" style="color: white; margin: 0 1rem;"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://github.com/yourprofile" target="_blank" style="color: white; margin: 0 1rem;"><i class="fab fa-github fa-2x"></i></a>
+            <a href="resume.pdf" download style="color: white; margin: 0 1rem;"><i class="fas fa-file-pdf fa-2x"></i></a>
+        </div>
+    </header>
 
-  <!-- Hero Section -->
-  <section id="hero">
-    <div class="hero-content">
-      <h1>Hello, I'm Kennedy Maina</h1>
-      <p>A Data Analyst with expertise in data visualization, statistical analysis, and machine learning.</p>
-      <a href="#about" class="btn">Learn More</a>
-    </div>
-  </section>
+    <section class="skills-grid">
+        <div class="skill-card" data-aos="fade-up">
+            <i class="fas fa-database fa-3x" style="color: var(--primary);"></i>
+            <h3>Data Analysis</h3>
+            <p>Python, Pandas, NumPy</p>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-chart-line fa-3x" style="color: var(--secondary);"></i>
+            <h3>Visualization</h3>
+            <p>Power BI, Tableau, Matplotlib</p>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-server fa-3x" style="color: var(--accent);"></i>
+            <h3>Databases</h3>
+            <p>SQL, PostgreSQL, BigQuery</p>
+        </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I am a passionate Data Analyst with experience in extracting insights from complex datasets.
-      My work focuses on transforming raw data into actionable insights using tools like Python, SQL, and Tableau.
-      I enjoy working on projects that involve predictive modeling, data cleaning, and visualization.
-    </p>
-  </section>
+    <section style="padding: 4rem 2rem;">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="zoom-in">
+                <img src="project1.jpg" alt="Sales Analysis">
+                <div class="project-info">
+                    <h3>Sales Trend Analysis</h3>
+                    <p>Created interactive dashboards showing regional sales performance</p>
+                    <button style="margin-top: 1rem;">View Project</button>
+                </div>
+            </div>
+            <!-- Add more project cards -->
+        </div>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>My Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card">
-        <h3>Data Cleaning & Preparation</h3>
-        <p>Pandas, NumPy, Excel</p>
-      </div>
-      <div class="skill-card">
-        <h3>Data Visualization</h3>
-        <p>Tableau, Matplotlib, Seaborn, Plotly</p>
-      </div>
-      <div class="skill-card">
-        <h3>Statistical Analysis</h3>
-        <p>R, Python (SciPy, StatsModels)</p>
-      </div>
-      <div class="skill-card">
-        <h3>Database Management</h3>
-        <p>SQL, PostgreSQL, MongoDB</p>
-      </div>
-      <div class="skill-card">
-        <h3>Machine Learning</h3>
-        <p>Scikit-learn, TensorFlow, Keras</p>
-      </div>
-      <div class="skill-card">
-        <h3>Big Data Tools</h3>
-        <p>Apache Spark, Hadoop</p>
-      </div>
-    </div>
-  </section>
+    <section class="contact">
+        <h2>Let's Connect</h2>
+        <form onsubmit="handleSubmit(event)">
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="section">
-    <h2>My Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Sales Forecasting</h3>
-        <img src="https://via.placeholder.com/400x300" alt="Sales Forecasting">
-        <p>
-          Built a time-series forecasting model using ARIMA and Prophet to predict monthly sales for an e-commerce company.
-        </p>
-        <a href="#" target="_blank">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Customer Segmentation</h3>
-        <img src="https://via.placeholder.com/400x300" alt="Customer Segmentation">
-        <p>
-          Performed customer segmentation using K-Means clustering to identify distinct groups of customers based on purchasing behavior.
-        </p>
-        <a href="#" target="_blank">View Project</a>
-      </div>
-      <div class="project-card">
-        <h3>Churn Prediction</h3>
-        <img src="https://via.placeholder.com/400x300" alt="Churn Prediction">
-        <p>
-          Developed a churn prediction model using logistic regression and random forests to identify customers likely to leave.
-        </p>
-        <a href="#" target="_blank">View Project</a>
-      </div>
-    </div>
-  </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize animations
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <form id="contact-form">
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
+        // Form handling
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert('Message sent successfully!');
+            e.target.reset();
+        }
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 Kennedy Maina. All rights reserved.</p>
-  </footer>
-
-  <script>
-    // Example: Handle form submission
-    document.getElementById('contact-form').addEventListener('submit', function (event) {
-      event.preventDefault();
-      alert('Thank you for your message! I will get back to you soon.');
-    });
-  </script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
