@@ -266,13 +266,6 @@
   </footer>
 
   <script>
-    <!-- Replace the existing form with this -->
-<form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST">
-    <input type="email" name="_replyto" placeholder="Your Email" required>
-    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
-    <input type="hidden" name="_subject" value="New Portfolio Message">
-    <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
-</form>
     // Example: Handle form submission
     document.getElementById('contact-form').addEventListener('submit', function (event) {
       event.preventDefault();
