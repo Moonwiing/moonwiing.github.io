@@ -90,7 +90,7 @@
             color: #0056b3;
         }
 
-        .skill-box {
+        .box {
             background: #fff;
             border: 1px solid #ddd;
             border-radius: 8px;
@@ -142,7 +142,7 @@
             background: #2c2c2c;
         }
 
-        body.dark-mode .skill-box, body.dark-mode .project-box {
+        body.dark-mode .box, body.dark-mode .project-box {
             background: #1e1e1e;
             border-color: #333;
         }
@@ -220,7 +220,7 @@
         <h2>Skills</h2>
 
         <!-- Data Visualization Box -->
-        <div class="skill-box">
+        <div class="box">
             <h3>Data Visualization</h3>
             <ul>
                 <li>R Shiny</li>
@@ -231,7 +231,7 @@
         </div>
 
         <!-- Database Management Box -->
-        <div class="skill-box">
+        <div class="box">
             <h3>Database Management</h3>
             <ul>
                 <li>SQL</li>
@@ -241,7 +241,7 @@
         </div>
 
         <!-- Programming Tools Box -->
-        <div class="skill-box">
+        <div class="box">
             <h3>Programming Tools</h3>
             <ul>
                 <li>Python</li>
@@ -249,15 +249,6 @@
                 <li>Pandas</li>
                 <li>NumPy</li>
             </ul>
-        </div>
-
-        <!-- Report Writing Box -->
-        <div class="skill-box">
-            <h3>Report Writing</h3>
-            <p>
-                Experienced in creating detailed reports using tools like R Markdown, Jupyter Notebooks, and Microsoft Word. 
-                Reports include clear visualizations, statistical analyses, and actionable recommendations.
-            </p>
         </div>
     </section>
 
