@@ -7,13 +7,12 @@
     <style>
         /* General Styles */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
             color: #333;
             line-height: 1.6;
-            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         header {
@@ -21,7 +20,6 @@
             color: white;
             text-align: center;
             padding: 20px 0;
-            transition: background 0.3s ease;
         }
 
         header h1 {
@@ -29,18 +27,13 @@
             font-size: 2.5rem;
         }
 
-        .profile-image {
+        .profile-picture {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
             margin: 20px auto;
             border: 4px solid white;
-            transition: transform 0.3s ease;
-        }
-
-        .profile-image:hover {
-            transform: scale(1.1);
         }
 
         nav {
@@ -49,7 +42,6 @@
             display: flex;
             justify-content: center;
             padding: 10px 0;
-            transition: background 0.3s ease;
         }
 
         nav a {
@@ -130,57 +122,37 @@
             text-align: center;
             padding: 20px 0;
             margin-top: 40px;
-            transition: background 0.3s ease;
         }
 
-        /* Dark Mode Styles */
-        body.dark-mode {
-            background-color: #121212;
-            color: #e0e0e0;
+        /* Skill Boxes */
+        .skill-category {
+            margin-bottom: 30px;
         }
 
-        body.dark-mode header {
-            background: #1e1e1e;
-        }
-
-        body.dark-mode nav {
-            background: #2c2c2c;
-        }
-
-        body.dark-mode .box, body.dark-mode .project-box {
-            background: #1e1e1e;
-            border-color: #333;
-        }
-
-        body.dark-mode footer {
-            background: #2c2c2c;
-        }
-
-        /* Theme Toggle Button */
-        .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 20px;
+        .skill-box {
+            display: inline-block;
+            background: #fff;
+            border: 1px solid #ddd;
             border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
+            padding: 10px 15px;
+            margin: 5px;
+            font-size: 0.9rem;
+            color: #555;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .theme-toggle:hover {
-            background: #0056b3;
+        .skill-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
         }
 
-        /* Media Queries for Responsiveness */
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2rem;
             }
 
-            .profile-image {
+            .profile-picture {
                 width: 120px;
                 height: 120px;
             }
@@ -193,15 +165,11 @@
 </head>
 <body>
 
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
-
     <!-- Header Section -->
     <header>
         <h1>Kennedy Maina</h1>
         <p>Data Analyst | SQL | Python | R | Power BI</p>
-        <!-- Updated Profile Image -->
-        <img src="https://raw.githubusercontent.com/Moonwiing/report.1/main/Maina.jpeg" alt="Kennedy Maina" class="profile-image">
+        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-picture">
     </header>
 
     <!-- Navigation Bar -->
@@ -225,36 +193,36 @@
     <section id="skills">
         <h2>Skills</h2>
 
-        <!-- Data Visualization Box -->
-        <div class="box">
+        <!-- Data Visualization -->
+        <div class="skill-category">
             <h3>Data Visualization</h3>
-            <ul>
-                <li>R Shiny</li>
-                <li>ggplot2</li>
-                <li>Power BI</li>
-                <li>Tableau</li>
-            </ul>
+            <div>
+                <span class="skill-box">R Shiny</span>
+                <span class="skill-box">ggplot2</span>
+                <span class="skill-box">Power BI</span>
+                <span class="skill-box">Tableau</span>
+            </div>
         </div>
 
-        <!-- Database Management Box -->
-        <div class="box">
+        <!-- Database Management -->
+        <div class="skill-category">
             <h3>Database Management</h3>
-            <ul>
-                <li>SQL</li>
-                <li>PostgreSQL</li>
-                <li>BigQuery</li>
-            </ul>
+            <div>
+                <span class="skill-box">SQL</span>
+                <span class="skill-box">PostgreSQL</span>
+                <span class="skill-box">BigQuery</span>
+            </div>
         </div>
 
-        <!-- Programming Tools Box -->
-        <div class="box">
+        <!-- Programming Tools -->
+        <div class="skill-category">
             <h3>Programming Tools</h3>
-            <ul>
-                <li>Python</li>
-                <li>R</li>
-                <li>Pandas</li>
-                <li>NumPy</li>
-            </ul>
+            <div>
+                <span class="skill-box">Python</span>
+                <span class="skill-box">R</span>
+                <span class="skill-box">Pandas</span>
+                <span class="skill-box">NumPy</span>
+            </div>
         </div>
     </section>
 
@@ -303,13 +271,6 @@
     <footer>
         <p>&copy; 2023 Kennedy Maina. All rights reserved.</p>
     </footer>
-
-    <!-- JavaScript for Theme Toggle -->
-    <script>
-        function toggleTheme() {
-            document.body.classList.toggle("dark-mode");
-        }
-    </script>
 
 </body>
 </html>
