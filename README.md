@@ -242,39 +242,27 @@
     <!-- Header -->
     <header class="fade-in">
         <img src="https://via.placeholder.com/150" alt="Kennedy Maina Profile Picture">
-        <h1>Kennedy Maina</h1>
-        <p>Data Analyst | SQL | Python | R | Data Science</p>
-        <p>View my report: <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_report.pdf" target="_blank">Kennedy Ithagu Maina Report</a></p>
-        <p>View my visual report: <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_Visual.pdf" target="_blank">Kennedy Ithagu Maina Visual Report</a></p>
+        <h1>Kennedy Maina | Data Analyst</h1>
+        <p>Welcome to my portfolio. I'm passionate about leveraging data to make informed decisions and create impactful solutions.</p>
     </header>
 
-    <!-- Main Content -->
+    <!-- Portfolio Section -->
     <section>
-        <h2>About Me</h2>
-        <p>I am a Data Analyst with a passion for leveraging data to provide actionable insights. I specialize in SQL, Python, R, and data visualization.</p>
+        <h2>My Work</h2>
+        <article>
+            <h3>Report Document</h3>
+            <iframe src="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_report.pdf" title="Kennedy Ithagu Maina Report"></iframe>
+        </article>
+
+        <article>
+            <h3>Visual Presentation</h3>
+            <iframe src="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_Visual.pdf" title="Kennedy Ithagu Maina Visual"></iframe>
+        </article>
     </section>
 
-    <section>
-        <h2>Skills</h2>
-        <div class="skill-category">
-            <h3>Data Analysis</h3>
-            <div class="skills-box">
-                <span class="skill-item">Python</span>
-                <span class="skill-item">R</span>
-                <span class="skill-item">SQL</span>
-            </div>
-        </div>
-        <div class="skill-category">
-            <h3>Data Visualization</h3>
-            <div class="skills-box">
-                <span class="skill-item">Tableau</span>
-                <span class="skill-item">PowerBI</span>
-            </div>
-        </div>
-    </section>
-
+    <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Kennedy Maina. All rights reserved.</p>
+        <p>Thank you for visiting my portfolio! Connect with me on <a href="https://www.linkedin.com/in/kennedyithagu/">LinkedIn</a>.</p>
     </footer>
 
     <script>
