@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,34 +10,41 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f1f3f4;
             color: #333;
             line-height: 1.6;
-            transition: background-color 0.3s ease, color 0.3s ease;
+            overflow-x: hidden;
         }
 
         header {
-            background: linear-gradient(135deg, #007BFF, #0056b3);
+            background: linear-gradient(45deg, #007BFF, #00aaff);
             color: white;
             text-align: center;
-            padding: 40px 20px;
+            padding: 60px 0;
+            position: relative;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
             margin: 0;
-            font-size: 2.5rem;
-            font-weight: bold;
+            font-size: 3rem;
+            font-weight: 600;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            margin-top: 10px;
         }
 
         .profile-picture {
-            width: 150px;
-            height: 150px;
+            width: 180px;
+            height: 180px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 20px auto;
-            border: 4px solid white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
+            margin: 30px auto;
+            border: 6px solid white;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease-in-out;
         }
 
         .profile-picture:hover {
@@ -49,50 +56,49 @@
             color: white;
             display: flex;
             justify-content: center;
-            padding: 10px 0;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
         nav a {
             color: white;
             text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
+            margin: 0 20px;
+            font-weight: 500;
+            font-size: 1rem;
             transition: color 0.3s ease;
         }
 
         nav a:hover {
-            color: #007BFF;
+            color: #00aaff;
         }
 
         section {
-            padding: 40px 20px;
+            padding: 60px 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
         h2 {
-            font-size: 2rem;
+            font-size: 2.5rem;
             color: #007BFF;
-            margin-bottom: 20px;
-            position: relative;
-        }
-
-        h2::after {
-            content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background: #007BFF;
-            margin-top: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 600;
         }
 
         ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         li {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
         }
 
         a {
@@ -102,124 +108,112 @@
         }
 
         a:hover {
-            color: #0056b3;
+            color: #00aaff;
         }
 
         .box {
             background: #fff;
             border: 1px solid #ddd;
-            border-radius: 8px;
+            border-radius: 10px;
             padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .project-box {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .project-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .project-box h3 {
-            margin-top: 0;
-            color: #007BFF;
-        }
-
-        .project-box p {
-            color: #555;
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
         }
 
         footer {
             background: #333;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 40px 0;
             margin-top: 40px;
+            position: relative;
         }
 
         /* Skill Boxes */
         .skill-category {
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
 
         .skill-box {
             display: inline-block;
             background: #fff;
             border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px 15px;
-            margin: 5px;
-            font-size: 0.9rem;
+            border-radius: 8px;
+            padding: 12px 20px;
+            margin: 8px;
+            font-size: 1rem;
             color: #555;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .skill-box:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transform: scale(1.1);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
 
-        /* Theme Toggle Button */
-        .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #007BFF;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s ease;
+        /* Projects Section */
+        .project-box {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .theme-toggle:hover {
-            background: #0056b3;
+        .project-box h3 {
+            margin-top: 0;
+            color: #007BFF;
+            font-size: 1.5rem;
         }
 
-        /* Media Queries for Responsiveness */
+        .project-box p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .project-box a {
+            font-size: 1.1rem;
+            color: #007BFF;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project-box a:hover {
+            color: #00aaff;
+        }
+
         @media (max-width: 768px) {
             header h1 {
                 font-size: 2rem;
             }
 
             .profile-picture {
-                width: 120px;
-                height: 120px;
+                width: 140px;
+                height: 140px;
             }
 
             section {
-                padding: 30px 15px;
+                padding: 40px 15px;
             }
         }
     </style>
 </head>
 <body>
 
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
-
     <!-- Header Section -->
     <header>
         <h1>Kennedy Maina</h1>
         <p>Data Analyst | SQL | Python | R | Power BI</p>
-        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-picture">
+        <img src="https://github.com/Moonwiing/report.1/blob/main/Maina.jpeg?raw=true" alt="Profile Picture" class="profile-picture">
     </header>
 
     <!-- Navigation Bar -->
@@ -242,8 +236,6 @@
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-
-        <!-- Data Visualization -->
         <div class="skill-category">
             <h3>Data Visualization</h3>
             <div>
@@ -253,8 +245,6 @@
                 <span class="skill-box">Tableau</span>
             </div>
         </div>
-
-        <!-- Database Management -->
         <div class="skill-category">
             <h3>Database Management</h3>
             <div>
@@ -263,8 +253,6 @@
                 <span class="skill-box">BigQuery</span>
             </div>
         </div>
-
-        <!-- Programming Tools -->
         <div class="skill-category">
             <h3>Programming Tools</h3>
             <div>
@@ -279,29 +267,21 @@
     <!-- Projects Section -->
     <section id="projects">
         <h2>Featured Projects</h2>
-
-        <!-- Project 1 -->
         <div class="project-box">
             <h3>Sales Trend Analysis</h3>
             <p>Analyzed sales data using R and Python to identify trends and create interactive dashboards.</p>
             <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_report.pdf" target="_blank">View Project (PDF)</a>
         </div>
-
-        <!-- Project 2 -->
         <div class="project-box">
             <h3>Customer Segmentation</h3>
             <p>Used R for clustering algorithms to segment customers for targeted marketing.</p>
             <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_Visual.pdf" target="_blank">View Project (PDF)</a>
         </div>
-
-        <!-- Project 3 -->
         <div class="project-box">
             <h3>Financial Forecasting</h3>
             <p>Built time-series models in R to predict revenue and expenses.</p>
             <p><em>Coming Soon</em></p>
         </div>
-
-        <!-- Project 4 -->
         <div class="project-box">
             <h3>Website Analytics</h3>
             <p>Analyzed user behavior using R to improve website performance and engagement.</p>
@@ -319,15 +299,8 @@
 
     <!-- Footer Section -->
     <footer>
-        <p>&copy; 2023 Kennedy Maina. All rights reserved.</p>
+        <p>&copy; 2025 Kennedy Maina | All Rights Reserved</p>
     </footer>
-
-    <!-- JavaScript for Theme Toggle -->
-    <script>
-        function toggleTheme() {
-            document.body.classList.toggle("dark-mode");
-        }
-    </script>
 
 </body>
 </html>
