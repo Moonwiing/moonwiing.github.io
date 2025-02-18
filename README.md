@@ -7,7 +7,7 @@
     <style>
         /* General Styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f9f9f9;
@@ -29,13 +29,18 @@
             font-size: 2.5rem;
         }
 
-        .profile-picture {
+        .profile-image {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
             margin: 20px auto;
             border: 4px solid white;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.1);
         }
 
         nav {
@@ -175,7 +180,7 @@
                 font-size: 2rem;
             }
 
-            .profile-picture {
+            .profile-image {
                 width: 120px;
                 height: 120px;
             }
@@ -195,7 +200,8 @@
     <header>
         <h1>Kennedy Maina</h1>
         <p>Data Analyst | SQL | Python | R | Power BI</p>
-        <img src="https://via.placeholder.com/150" alt="Profile Picture" class="profile-picture">
+        <!-- Updated Profile Image -->
+        <img src="https://via.placeholder.com/150" alt="Kennedy Maina" class="profile-image">
     </header>
 
     <!-- Navigation Bar -->
