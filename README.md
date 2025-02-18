@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -244,143 +243,45 @@
     <header class="fade-in">
         <img src="https://via.placeholder.com/150" alt="Kennedy Maina Profile Picture">
         <h1>Kennedy Maina</h1>
-        <p>Data Analyst | SQL | Python | R | Power BI</p>
-        <nav>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
+        <p>Data Analyst | SQL | Python | R | Data Science</p>
+        <p>View my report: <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_report.pdf" target="_blank">Kennedy Ithagu Maina Report</a></p>
+        <p>View my visual report: <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_Visual.pdf" target="_blank">Kennedy Ithagu Maina Visual Report</a></p>
     </header>
 
-    <!-- Skills Section -->
-    <section id="skills" class="fade-in">
+    <!-- Main Content -->
+    <section>
+        <h2>About Me</h2>
+        <p>I am a Data Analyst with a passion for leveraging data to provide actionable insights. I specialize in SQL, Python, R, and data visualization.</p>
+    </section>
+
+    <section>
         <h2>Skills</h2>
-
-        <!-- Data Visualization -->
         <div class="skill-category">
-            <h3>Data Visualization</h3>
-            <div class="skills-box">
-                <span class="skill-item">R Shiny</span>
-                <span class="skill-item">ggplot2</span>
-                <span class="skill-item">Power BI</span>
-                <span class="skill-item">Tableau</span>
-            </div>
-        </div>
-
-        <!-- Database Management -->
-        <div class="skill-category">
-            <h3>Database Management</h3>
-            <div class="skills-box">
-                <span class="skill-item">SQL</span>
-                <span class="skill-item">PostgreSQL</span>
-                <span class="skill-item">BigQuery</span>
-            </div>
-        </div>
-
-        <!-- Tools -->
-        <div class="skill-category">
-            <h3>Tools</h3>
+            <h3>Data Analysis</h3>
             <div class="skills-box">
                 <span class="skill-item">Python</span>
                 <span class="skill-item">R</span>
-                <span class="skill-item">Pandas</span>
-                <span class="skill-item">NumPy</span>
+                <span class="skill-item">SQL</span>
+            </div>
+        </div>
+        <div class="skill-category">
+            <h3>Data Visualization</h3>
+            <div class="skills-box">
+                <span class="skill-item">Tableau</span>
+                <span class="skill-item">PowerBI</span>
             </div>
         </div>
     </section>
 
-    <!-- Featured Projects Section -->
-    <section id="projects" class="fade-in">
-        <h2>Featured Projects</h2>
-
-        <article>
-            <h3>Sales Trend Analysis</h3>
-            <p>Analyzed sales data using R and Python to identify trends and create interactive dashboards.</p>
-            <button onclick="openModal('sales-trend')">View Project</button>
-        </article>
-
-        <article>
-            <h3>Customer Segmentation</h3>
-            <p>Used R for clustering algorithms to segment customers for targeted marketing.</p>
-            <button onclick="openModal('customer-segmentation')">View Project</button>
-        </article>
-
-        <article>
-            <h3>Financial Forecasting</h3>
-            <p>Built time-series models in R to predict revenue and expenses.</p>
-            <a href="#" class="button">Coming Soon</a>
-        </article>
-
-        <article>
-            <h3>Website Analytics</h3>
-            <p>Analyzed user behavior using R to improve website performance and engagement.</p>
-            <a href="#" class="button">Coming Soon</a>
-        </article>
-    </section>
-
-    <!-- Modals -->
-    <div id="sales-trend" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('sales-trend')">&times;</span>
-            <h2>Sales Trend Analysis</h2>
-            <iframe src="https://drive.google.com/file/d/15zMuGm1vWSz-mtWP4u8XoBNXRZ-C2NFM/preview"></iframe>
-        </div>
-    </div>
-
-    <div id="customer-segmentation" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal('customer-segmentation')">&times;</span>
-            <h2>Customer Segmentation</h2>
-            <iframe src="https://drive.google.com/file/d/1PUJrJRo8KcMEvb4QAN7tR7_PdDwZKxRD/preview"></iframe>
-        </div>
-    </div>
-
-    <!-- Contact Section -->
-    <section id="contact" class="fade-in">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaborations or opportunities!</p>
-        <p><a href="mailto:kennedymaina573@gmail.com">kennedymaina573@gmail.com</a></p>
-        <p>+254 700 000 000</p>
-    </section>
-
-    <!-- Footer -->
-    <footer class="fade-in">
-        <p>&copy; 2023 Kennedy Maina. All rights reserved.</p>
+    <footer>
+        <p>&copy; 2025 Kennedy Maina. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript for Theme Toggle and Modals -->
     <script>
-        // Theme Toggle Functionality
         function toggleTheme() {
-            const body = document.body;
-            body.classList.toggle('dark-theme');
-            const theme = body.classList.contains('dark-theme') ? 'dark' : 'light';
-            localStorage.setItem('theme', theme);
+            document.body.classList.toggle('dark-theme');
         }
-
-        // Load saved theme on page load
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme === 'dark') {
-            document.body.classList.add('dark-theme');
-        }
-
-        // Modal Functionality
-        function openModal(id) {
-            const modal = document.getElementById(id);
-            modal.style.display = "block";
-        }
-
-        function closeModal(id) {
-            const modal = document.getElementById(id);
-            modal.style.display = "none";
-        }
-
-        // Close modals when clicking outside
-        window.onclick = function (event) {
-            if (event.target.classList.contains("modal")) {
-                event.target.style.display = "none";
-            }
-        };
     </script>
+
 </body>
 </html>
