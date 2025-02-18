@@ -242,34 +242,30 @@
     <!-- Header -->
     <header class="fade-in">
         <img src="https://via.placeholder.com/150" alt="Kennedy Maina Profile Picture">
-        <h1>Kennedy Maina | Data Analyst</h1>
-        <p>Welcome to my portfolio. I'm passionate about leveraging data to make informed decisions and create impactful solutions.</p>
+        <h1>Kennedy Maina - Data Analyst</h1>
+        <p>Exploring the world of data through analysis, insights, and actionable solutions.</p>
     </header>
 
     <!-- Portfolio Section -->
     <section>
         <h2>My Work</h2>
         <article>
-            <h3>Report Document</h3>
-            <iframe src="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_report.pdf" title="Kennedy Ithagu Maina Report"></iframe>
+            <h3>Project Report PDF</h3>
+            <p>Click below to view my detailed report on various data analysis techniques and applications:</p>
+            <a href="https://raw.githubusercontent.com/Moonwiing/report.1/main/Kennedy%20Ithagu%20Maina_report.pdf" target="_blank">View Full Report PDF</a>
         </article>
 
         <article>
-            <h3>Visual Presentation</h3>
-            <iframe src="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_Visual.pdf" title="Kennedy Ithagu Maina Visual"></iframe>
+            <h3>Visual Analysis PDF</h3>
+            <p>Click below to view my data visualizations and insights:</p>
+            <a href="https://raw.githubusercontent.com/Moonwiing/report.1/main/Kennedy%20Ithagu%20Maina_Visual.pdf" target="_blank">View Visual Analysis PDF</a>
         </article>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>Thank you for visiting my portfolio! Connect with me on <a href="https://www.linkedin.com/in/kennedyithagu/">LinkedIn</a>.</p>
+        <p>Contact me: <a href="mailto:kennedy.maina@example.com">kennedy.maina@example.com</a></p>
     </footer>
-
-    <script>
-        function toggleTheme() {
-            document.body.classList.toggle('dark-theme');
-        }
-    </script>
 
 </body>
 </html>
