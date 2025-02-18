@@ -30,6 +30,24 @@
             border: 1px solid #ddd;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
+        .download-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .download-link a {
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .download-link a:hover {
+            background-color: #0056b3;
+        }
     </style>
 </head>
 <body>
@@ -38,12 +56,29 @@
         <h1>Kennedy Maina | Data Analyst Portfolio</h1>
     </header>
 
-    <div class="pdf-container" id="pdf-viewer"></div>
-
+    <!-- Embed the first PDF -->
+    <h2>Kennedy Ithagu Maina Report</h2>
+    <div class="pdf-container" id="pdf-viewer1"></div>
     <script>
-        // Embed PDF using PDFObject
-        PDFObject.embed("https://yourwebsite.com/pdfs/Kennedy_Ithagu_Maina_report.pdf", "#pdf-viewer");
+        // Embed PDF from GitHub Pages URL
+        PDFObject.embed("https://moonwiing.github.io/report.1/assets/pdfs/Kennedy%20Ithagu%20Maina_report.pdf", "#pdf-viewer1");
     </script>
+    <!-- Download Link for the first PDF -->
+    <div class="download-link">
+        <a href="https://moonwiing.github.io/report.1/assets/pdfs/Kennedy%20Ithagu%20Maina_report.pdf" target="_blank" download>Download Report</a>
+    </div>
+
+    <!-- Embed the second PDF -->
+    <h2>Kennedy Ithagu Maina Visual</h2>
+    <div class="pdf-container" id="pdf-viewer2"></div>
+    <script>
+        // Embed PDF from GitHub Pages URL
+        PDFObject.embed("https://moonwiing.github.io/report.1/assets/pdfs/Kennedy%20Ithagu%20Maina_Visual.pdf", "#pdf-viewer2");
+    </script>
+    <!-- Download Link for the second PDF -->
+    <div class="download-link">
+        <a href="https://moonwiing.github.io/report.1/assets/pdfs/Kennedy%20Ithagu%20Maina_Visual.pdf" target="_blank" download>Download Visual</a>
+    </div>
 
 </body>
 </html>
