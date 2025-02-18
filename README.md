@@ -90,6 +90,16 @@
             color: #0056b3;
         }
 
+        .skill-box {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
+        }
+
         .project-box {
             background: #fff;
             border: 1px solid #ddd;
@@ -132,7 +142,7 @@
             background: #2c2c2c;
         }
 
-        body.dark-mode .project-box {
+        body.dark-mode .skill-box, body.dark-mode .project-box {
             background: #1e1e1e;
             border-color: #333;
         }
@@ -208,17 +218,46 @@
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skill-category">
-            <strong>Data Visualization:</strong><br>
-            R Shiny, ggplot2, Power BI, Tableau
+
+        <!-- Data Visualization Box -->
+        <div class="skill-box">
+            <h3>Data Visualization</h3>
+            <ul>
+                <li>R Shiny</li>
+                <li>ggplot2</li>
+                <li>Power BI</li>
+                <li>Tableau</li>
+            </ul>
         </div>
-        <div class="skill-category">
-            <strong>Database Management:</strong><br>
-            SQL, PostgreSQL, BigQuery
+
+        <!-- Database Management Box -->
+        <div class="skill-box">
+            <h3>Database Management</h3>
+            <ul>
+                <li>SQL</li>
+                <li>PostgreSQL</li>
+                <li>BigQuery</li>
+            </ul>
         </div>
-        <div class="skill-category">
-            <strong>Programming Tools:</strong><br>
-            Python, R, Pandas, NumPy
+
+        <!-- Programming Tools Box -->
+        <div class="skill-box">
+            <h3>Programming Tools</h3>
+            <ul>
+                <li>Python</li>
+                <li>R</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+            </ul>
+        </div>
+
+        <!-- Report Writing Box -->
+        <div class="skill-box">
+            <h3>Report Writing</h3>
+            <p>
+                Experienced in creating detailed reports using tools like R Markdown, Jupyter Notebooks, and Microsoft Word. 
+                Reports include clear visualizations, statistical analyses, and actionable recommendations.
+            </p>
         </div>
     </section>
 
