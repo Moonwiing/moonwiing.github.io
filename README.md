@@ -13,6 +13,7 @@
             background-color: #f9f9f9;
             color: #333;
             line-height: 1.6;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
 
         header {
@@ -20,6 +21,7 @@
             color: white;
             text-align: center;
             padding: 20px 0;
+            transition: background 0.3s ease;
         }
 
         header h1 {
@@ -42,6 +44,7 @@
             display: flex;
             justify-content: center;
             padding: 10px 0;
+            transition: background 0.3s ease;
         }
 
         nav a {
@@ -87,13 +90,22 @@
             color: #0056b3;
         }
 
-        .project-title {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin-bottom: 10px;
+        .project-box {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .project-description {
+        .project-box h3 {
+            margin-top: 0;
+            color: #007BFF;
+        }
+
+        .project-box p {
             color: #555;
         }
 
@@ -103,10 +115,48 @@
             text-align: center;
             padding: 20px 0;
             margin-top: 40px;
+            transition: background 0.3s ease;
         }
 
-        footer p {
-            margin: 0;
+        /* Dark Mode Styles */
+        body.dark-mode {
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        body.dark-mode header {
+            background: #1e1e1e;
+        }
+
+        body.dark-mode nav {
+            background: #2c2c2c;
+        }
+
+        body.dark-mode .project-box {
+            background: #1e1e1e;
+            border-color: #333;
+        }
+
+        body.dark-mode footer {
+            background: #2c2c2c;
+        }
+
+        /* Theme Toggle Button */
+        .theme-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            background: #0056b3;
         }
 
         /* Media Queries for Responsiveness */
@@ -124,21 +174,12 @@
                 padding: 30px 15px;
             }
         }
-
-        /* Advanced Animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-
-        .fade-in.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
     </style>
 </head>
 <body>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" onclick="toggleTheme()">Switch Theme</button>
 
     <!-- Header Section -->
     <header>
@@ -167,15 +208,15 @@
     <!-- Skills Section -->
     <section id="skills">
         <h2>Skills</h2>
-        <div class="skill-category fade-in">
+        <div class="skill-category">
             <strong>Data Visualization:</strong><br>
             R Shiny, ggplot2, Power BI, Tableau
         </div>
-        <div class="skill-category fade-in">
+        <div class="skill-category">
             <strong>Database Management:</strong><br>
             SQL, PostgreSQL, BigQuery
         </div>
-        <div class="skill-category fade-in">
+        <div class="skill-category">
             <strong>Programming Tools:</strong><br>
             Python, R, Pandas, NumPy
         </div>
@@ -186,38 +227,30 @@
         <h2>Featured Projects</h2>
 
         <!-- Project 1 -->
-        <div class="project fade-in">
-            <h3 class="project-title">Sales Trend Analysis</h3>
-            <p class="project-description">
-                Analyzed sales data using R and Python to identify trends and create interactive dashboards.
-            </p>
+        <div class="project-box">
+            <h3>Sales Trend Analysis</h3>
+            <p>Analyzed sales data using R and Python to identify trends and create interactive dashboards.</p>
             <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_report.pdf" target="_blank">View Project (PDF)</a>
         </div>
 
         <!-- Project 2 -->
-        <div class="project fade-in">
-            <h3 class="project-title">Customer Segmentation</h3>
-            <p class="project-description">
-                Used R for clustering algorithms to segment customers for targeted marketing.
-            </p>
+        <div class="project-box">
+            <h3>Customer Segmentation</h3>
+            <p>Used R for clustering algorithms to segment customers for targeted marketing.</p>
             <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_Visual.pdf" target="_blank">View Project (PDF)</a>
         </div>
 
         <!-- Project 3 -->
-        <div class="project fade-in">
-            <h3 class="project-title">Financial Forecasting</h3>
-            <p class="project-description">
-                Built time-series models in R to predict revenue and expenses.
-            </p>
+        <div class="project-box">
+            <h3>Financial Forecasting</h3>
+            <p>Built time-series models in R to predict revenue and expenses.</p>
             <p><em>Coming Soon</em></p>
         </div>
 
         <!-- Project 4 -->
-        <div class="project fade-in">
-            <h3 class="project-title">Website Analytics</h3>
-            <p class="project-description">
-                Analyzed user behavior using R to improve website performance and engagement.
-            </p>
+        <div class="project-box">
+            <h3>Website Analytics</h3>
+            <p>Analyzed user behavior using R to improve website performance and engagement.</p>
             <p><em>Coming Soon</em></p>
         </div>
     </section>
@@ -235,21 +268,11 @@
         <p>&copy; 2023 Kennedy Maina. All rights reserved.</p>
     </footer>
 
-    <!-- JavaScript for Animations -->
+    <!-- JavaScript for Theme Toggle -->
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("active");
-                    }
-                });
-            }, { threshold: 0.1 });
-
-            document.querySelectorAll(".fade-in").forEach(el => {
-                observer.observe(el);
-            });
-        });
+        function toggleTheme() {
+            document.body.classList.toggle("dark-mode");
+        }
     </script>
 
 </body>
