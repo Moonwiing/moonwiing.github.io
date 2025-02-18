@@ -201,7 +201,7 @@
         <h1>Kennedy Maina</h1>
         <p>Data Analyst | SQL | Python | R | Power BI</p>
         <!-- Updated Profile Image -->
-        <img src="https://via.placeholder.com/150" alt="Kennedy Maina" class="profile-image">
+        <img src="https://raw.githubusercontent.com/Moonwiing/report.1/main/Maina.jpeg" alt="Kennedy Maina" class="profile-image">
     </header>
 
     <!-- Navigation Bar -->
