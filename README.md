@@ -1,9 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kennedy Maina | Data Analyst</title>
+    <title>KENNEDY MAINA | Data Analyst</title>
     <meta name="description" content="Data Analyst specializing in SQL, Python, and Data Visualization with expertise in transforming raw data into actionable insights">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -58,7 +59,7 @@
             height: 200px;
             border-radius: 50%;
             border: 5px solid white;
-            margin: 1rem auto;
+            margin: 0 auto 1rem;
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             animation: float 5s ease-in-out infinite;
         }
@@ -67,6 +68,11 @@
             0% { transform: translateY(0); }
             50% { transform: translateY(-10px); }
             100% { transform: translateY(0); }
+        }
+
+        .hero-description {
+            margin: 1rem 0;
+            font-style: italic;
         }
 
         /* Skills Grid */
@@ -120,7 +126,6 @@
         .project-card {
             background: white;
             border-radius: 8px;
-            overflow: hidden;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             position: relative;
             transition: transform 0.3s;
@@ -134,41 +139,74 @@
             padding: 1.5rem;
         }
 
-        /* Contact Section */
-        .contact {
-            padding: 4rem 2rem;
+        .project-button {
+            display: inline-block;
+            background: var(--accent);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 1rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, 0.2);
+            transform: skewX(-25deg);
+            transition: left 0.3s;
+        }
+
+        .project-button:hover {
+            background: #ff5252;
+        }
+
+        .project-button:hover::after {
+            left: 100%;
+        }
+
+        /* Footer */
+        .footer {
             background: var(--primary);
             color: white;
             text-align: center;
+            padding: 2rem 0;
+            position: relative;
         }
 
-        form {
-            max-width: 600px;
-            margin: 2rem auto;
-        }
-
-        input, textarea {
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            padding: 1rem;
-            margin: 0.5rem 0;
-            border: none;
-            border-radius: 5px;
-            background: rgba(255,255,255,0.1);
-            color: white;
-        }
-
-        button {
+            height: 5px;
             background: var(--accent);
-            color: white;
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
         }
 
-        button:hover {
-            background: #ff5252;
+        .footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: var(--secondary);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: var(--accent);
         }
 
         @media (max-width: 768px) {
@@ -186,6 +224,7 @@
             <img src="https://github.com/Moonwiing/report.1/blob/main/Maina.jpeg?raw=true" alt="Kennedy Maina" class="profile-img">
             <h1>Kennedy Maina</h1>
             <p>Data Analyst | SQL | Python | Power BI</p>
+            <p class="hero-description">I am passionate about leveraging data to uncover insights that drive strategic decisions in businesses. My love for analytics stems from the thrill of transforming raw data into actionable knowledge.</p>
             <div style="margin: 1.5rem 0;">
                 <a href="https://linkedin.com/in/yourprofile" target="_blank" style="color: white; margin: 0 1rem;"><i class="fab fa-linkedin fa-2x"></i></a>
                 <a href="https://github.com/yourprofile" target="_blank" style="color: white; margin: 0 1rem;"><i class="fab fa-github fa-2x"></i></a>
@@ -219,27 +258,25 @@
                 <div class="project-info">
                     <h3>Data Analysis Report</h3>
                     <p>In-depth analysis of data trends and insights.</p>
-                    <button style="margin-top: 1rem;"><a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_report.pdf" style="color: white; text-decoration: none;">View Project</a></button>
+                    <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_report.pdf" class="project-button">View Project</a>
                 </div>
             </div>
             <div class="project-card" data-aos="zoom-in">
                 <div class="project-info">
                     <h3>Visual Data Representation</h3>
                     <p>Visual storytelling through data visualization.</p>
-                    <button style="margin-top: 1rem;"><a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_Visual.pdf" style="color: white; text-decoration: none;">View Project</a></button>
+                    <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_Visual.pdf" class="project-button">View Project</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="contact">
-        <h2>Let's Connect</h2>
-        <form onsubmit="handleSubmit(event)">
-            <input type="email" placeholder="Your Email" required>
-            <textarea placeholder="Your Message" rows="4" required></textarea>
-            <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
-        </form>
-    </section>
+    <footer class="footer">
+        <p>For collaboration opportunities, inquiries, or any other matters, feel free to contact me:</p>
+        <p><a href="mailto:kennedymaina573@gmail.com">kennedymaina573@gmail.com</a></p>
+        <p>Or call: <a href="tel:0717999296">0717999296</a></p>
+        <p>&copy; All Rights Reserved.</p>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -248,13 +285,6 @@
             duration: 1000,
             once: true
         });
-
-        // Form handling
-        function handleSubmit(e) {
-            e.preventDefault();
-            alert('Message sent successfully!');
-            e.target.reset();
-        }
 
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
