@@ -1,332 +1,270 @@
-
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kennedy Maina | Data Analyst</title>
+    <meta name="description" content="Data Analyst specializing in SQL, Python, and Data Visualization with expertise in transforming raw data into actionable insights">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
+        :root {
+            --primary: #2A5C82;
+            --secondary: #34ADAD;
+            --accent: #FF6B6B;
+        }
+
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
             line-height: 1.6;
-            transition: background-color 0.3s ease, color 0.3s ease;
+            background: #f9f9f9;
         }
 
-        header {
-            background: linear-gradient(135deg, #007BFF, #0056b3);
-            color: white;
+        /* Hero Section */
+        .hero {
             text-align: center;
-            padding: 40px 20px;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            font-weight: bold;
-        }
-
-        .profile-picture {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin: 20px auto;
-            border: 4px solid white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease;
-        }
-
-        .profile-picture:hover {
-            transform: scale(1.1);
-        }
-
-        nav {
-            background: #333;
+            padding: 6rem 2rem;
+            background: linear-gradient(45deg, var(--primary), var(--secondary));
             color: white;
-            display: flex;
-            justify-content: center;
-            padding: 10px 0;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #007BFF;
-        }
-
-        section {
-            padding: 40px 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        h2 {
-            font-size: 2rem;
-            color: #007BFF;
-            margin-bottom: 20px;
+            clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
             position: relative;
         }
 
-        h2::after {
+        .hero::before {
             content: '';
-            display: block;
-            width: 50px;
-            height: 3px;
-            background: #007BFF;
-            margin-top: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('assets/background-pattern.jpg') repeat;
+            opacity: 0.1;
+            z-index: 0;
         }
 
-        ul {
-            list-style: none;
-            padding: 0;
+        .hero-content {
+            position: relative;
+            z-index: 1;
         }
 
-        li {
-            margin-bottom: 15px;
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            border: 5px solid white;
+            margin: 1rem auto;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            animation: float 5s ease-in-out infinite;
         }
 
-        a {
-            color: #007BFF;
-            text-decoration: none;
-            transition: color 0.3s ease;
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0); }
         }
 
-        a:hover {
-            color: #0056b3;
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 4rem 2rem;
+            background: #e9faff;
         }
 
-        .box {
-            background: #fff;
-            border: 1px solid #ddd;
+        .skill-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 107, 107, 0.1);
+            transition: top 0.3s;
+        }
+
+        .skill-card:hover::before {
+            top: 0;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        /* Projects Grid */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .project-card {
+            background: white;
             border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            position: relative;
+            transition: transform 0.3s;
         }
 
-        .box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        .project-card:hover {
+            transform: scale(1.05);
         }
 
-        .project-box {
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        .project-info {
+            padding: 1.5rem;
         }
 
-        .project-box:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .project-box h3 {
-            margin-top: 0;
-            color: #007BFF;
-        }
-
-        .project-box p {
-            color: #555;
-        }
-
-        footer {
-            background: #333;
+        /* Contact Section */
+        .contact {
+            padding: 4rem 2rem;
+            background: var(--primary);
             color: white;
             text-align: center;
-            padding: 20px 0;
-            margin-top: 40px;
         }
 
-        /* Skill Boxes */
-        .skill-category {
-            margin-bottom: 30px;
+        form {
+            max-width: 600px;
+            margin: 2rem auto;
         }
 
-        .skill-box {
-            display: inline-block;
-            background: #fff;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            padding: 10px 15px;
-            margin: 5px;
-            font-size: 0.9rem;
-            color: #555;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .skill-box:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Theme Toggle Button */
-        .theme-toggle {
-            position: fixed;
-            top: 20px;
-            right: 20px;
-            background: #007BFF;
-            color: white;
+        input, textarea {
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
             border: none;
-            padding: 10px 20px;
+            border-radius: 5px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+        }
+
+        button {
+            background: var(--accent);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background 0.3s ease;
+            transition: background 0.3s;
         }
 
-        .theme-toggle:hover {
-            background: #0056b3;
+        button:hover {
+            background: #ff5252;
         }
 
-        /* Media Queries for Responsiveness */
         @media (max-width: 768px) {
-            header h1 {
-                font-size: 2rem;
-            }
-
-            .profile-picture {
-                width: 120px;
-                height: 120px;
-            }
-
-            section {
-                padding: 30px 15px;
+            .hero {
+                padding: 4rem 1rem;
             }
         }
     </style>
 </head>
+
 <body>
 
-    <!-- Theme Toggle Button -->
-    <button class="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>
-
-    <!-- Header Section -->
-    <header>
-        <h1>Kennedy Maina</h1>
-        <p>Data Analyst | SQL | Python | R | Power BI</p>
-        <img src="https://github.com/Moonwiing/report.1/blob/main/Maina.jpeg">
+    <header class="hero">
+        <div class="hero-content">
+            <img src="https://github.com/Moonwiing/report.1/blob/main/Maina.jpeg?raw=true" alt="Kennedy Maina" class="profile-img">
+            <h1>Kennedy Maina</h1>
+            <p>Data Analyst | SQL | Python | Power BI</p>
+            <div style="margin: 1.5rem 0;">
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" style="color: white; margin: 0 1rem;"><i class="fab fa-linkedin fa-2x"></i></a>
+                <a href="https://github.com/yourprofile" target="_blank" style="color: white; margin: 0 1rem;"><i class="fab fa-github fa-2x"></i></a>
+                <a href="resume.pdf" download style="color: white; margin: 0 1rem;"><i class="fas fa-file-pdf fa-2x"></i></a>
+            </div>
+        </div>
     </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate Data Analyst with expertise in SQL, Python, R, and Power BI. 
-            My goal is to transform raw data into actionable insights that drive business growth.
-        </p>
+    <section class="skills-grid">
+        <div class="skill-card" data-aos="fade-up">
+            <i class="fas fa-database fa-3x" style="color: var(--primary);"></i>
+            <h3>Data Analysis</h3>
+            <p>Python, Pandas, NumPy</p>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
+            <i class="fas fa-chart-line fa-3x" style="color: var(--secondary);"></i>
+            <h3>Visualization</h3>
+            <p>Power BI, Tableau, Matplotlib</p>
+        </div>
+        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
+            <i class="fas fa-server fa-3x" style="color: var(--accent);"></i>
+            <h3>Databases</h3>
+            <p>SQL, PostgreSQL, BigQuery</p>
+        </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
-
-        <!-- Data Visualization -->
-        <div class="skill-category">
-            <h3>Data Visualization</h3>
-            <div>
-                <span class="skill-box">R Shiny</span>
-                <span class="skill-box">ggplot2</span>
-                <span class="skill-box">Power BI</span>
-                <span class="skill-box">Tableau</span>
+    <section style="padding: 4rem 2rem;">
+        <h2 style="text-align: center; margin-bottom: 3rem;">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card" data-aos="zoom-in">
+                <div class="project-info">
+                    <h3>Data Analysis Report</h3>
+                    <p>In-depth analysis of data trends and insights.</p>
+                    <button style="margin-top: 1rem;"><a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_report.pdf" style="color: white; text-decoration: none;">View Project</a></button>
+                </div>
             </div>
-        </div>
-
-        <!-- Database Management -->
-        <div class="skill-category">
-            <h3>Database Management</h3>
-            <div>
-                <span class="skill-box">SQL</span>
-                <span class="skill-box">PostgreSQL</span>
-                <span class="skill-box">BigQuery</span>
-            </div>
-        </div>
-
-        <!-- Programming Tools -->
-        <div class="skill-category">
-            <h3>Programming Tools</h3>
-            <div>
-                <span class="skill-box">Python</span>
-                <span class="skill-box">R</span>
-                <span class="skill-box">Pandas</span>
-                <span class="skill-box">NumPy</span>
+            <div class="project-card" data-aos="zoom-in">
+                <div class="project-info">
+                    <h3>Visual Data Representation</h3>
+                    <p>Visual storytelling through data visualization.</p>
+                    <button style="margin-top: 1rem;"><a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_Visual.pdf" style="color: white; text-decoration: none;">View Project</a></button>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Featured Projects</h2>
-
-        <!-- Project 1 -->
-        <div class="project-box">
-            <h3>Sales Trend Analysis</h3>
-            <p>Analyzed sales data using R and Python to identify trends and create interactive dashboards.</p>
-            <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_report.pdf" target="_blank">View Project (PDF)</a>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="project-box">
-            <h3>Customer Segmentation</h3>
-            <p>Used R for clustering algorithms to segment customers for targeted marketing.</p>
-            <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_Visual.pdf" target="_blank">View Project (PDF)</a>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="project-box">
-            <h3>Financial Forecasting</h3>
-            <p>Built time-series models in R to predict revenue and expenses.</p>
-            <p><em>Coming Soon</em></p>
-        </div>
-
-        <!-- Project 4 -->
-        <div class="project-box">
-            <h3>Website Analytics</h3>
-            <p>Analyzed user behavior using R to improve website performance and engagement.</p>
-            <p><em>Coming Soon</em></p>
-        </div>
+    <section class="contact">
+        <h2>Let's Connect</h2>
+        <form onsubmit="handleSubmit(event)">
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message <i class="fas fa-paper-plane"></i></button>
+        </form>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Feel free to reach out for collaborations or opportunities!</p>
-        <p>Email: <a href="mailto:kennedymaina573@gmail.com">kennedymaina573@gmail.com</a></p>
-        <p>Phone: +254 700 000 000</p>
-    </section>
-
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2023 Kennedy Maina. All rights reserved.</p>
-    </footer>
-
-    <!-- JavaScript for Theme Toggle -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        function toggleTheme() {
-            document.body.classList.toggle("dark-mode");
+        // Initialize animations
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+
+        // Form handling
+        function handleSubmit(e) {
+            e.preventDefault();
+            alert('Message sent successfully!');
+            e.target.reset();
         }
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
     </script>
 
 </body>
