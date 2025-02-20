@@ -1,10 +1,11 @@
+<!DOCTYPE html>
 <html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kennedy Maina | Data Analyst</title>
-    <meta name="description" content="Data Analyst specializing in R, SQL, Python, and Data Visualization with expertise in transforming raw data into actionable insights">
+    <meta name="description" content="Data Analyst specializing in SQL, Python, and Data Visualization with expertise in transforming raw data into actionable insights">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <style>
@@ -315,7 +316,7 @@
         <div class="hero-content">
             <img src="https://github.com/Moonwiing/report.1/raw/main/Maina.jpeg" alt="Kennedy Maina" class="profile-img">
             <h1>Kennedy Maina</h1>
-            <p>Data Analyst | SQL | Python | Power BI !R </p>
+            <p>Data Analyst R | SQL | Python | Power BI</p>
             <p class="hero-description">I am passionate about leveraging data to uncover insights that drive strategic decisions in businesses. My love for analytics stems from the thrill of transforming raw data into actionable knowledge.</p>
             <div style="margin: 1.5rem 0;">
                 <a href="https://www.linkedin.com/in/kennedy-maina-216822210" target="_blank" style="color: white; margin: 0 1rem;"><i class="fab fa-linkedin fa-2x"></i></a>
@@ -329,12 +330,12 @@
         <div class="skill-card" data-aos="fade-up">
             <i class="fas fa-database fa-3x" style="color: var(--primary);"></i>
             <h3>Data Analysis</h3>
-            <p>R, Python, Pandas, NumPy</p>
+            <p>R, Excel, SPSS, Python, Pandas, NumPy</p>
         </div>
         <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
             <i class="fas fa-chart-line fa-3x" style="color: var(--secondary);"></i>
             <h3>Visualization</h3>
-            <p>Power BI, Tableau, Matplotlib</p>
+            <p>R-shiny, Ggplot, Spatial, Power BI, Tableau, Matplotlib</p>
         </div>
         <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
             <i class="fas fa-server fa-3x" style="color: var(--accent);"></i>
@@ -370,7 +371,7 @@
     </section>
 
     <footer class="footer">
-        <p>For collaboration opportunities and inquiries feel free to contact me:</p>
+        <p>For collaboration opportunities and inquiries  feel free to contact me:</p>
         <p><a href="mailto:kennedymaina573@gmail.com">kennedymaina573@gmail.com</a></p>
         <p>Or call: <a href="tel:0717999296">0717999296</a></p>
         <p>© All Rights Reserved.</p>
