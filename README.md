@@ -200,16 +200,17 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             position: relative;
             transition: transform 0.3s;
-            overflow: hidden; /* Ensure image doesn’t spill out */
+            overflow: hidden; /* Ensure media doesn’t spill out */
         }
 
         .project-card:hover {
             transform: scale(1.05);
         }
 
-        .project-card img {
+        .project-card img,
+        .project-card video {
             width: 100%;
-            height: 150px; /* Fixed height for consistency */
+            height: 150px; /* Match image height */
             object-fit: cover; /* Crop to fit */
             display: block;
         }
@@ -354,6 +355,7 @@
     <section style="padding: 4rem 2rem;">
         <h2 style="text-align: center; margin-bottom: 3rem;">Featured Projects</h2>
         <div class="projects-grid">
+            <!-- Existing Image-Based Projects -->
             <div class="project-card" data-aos="zoom-in">
                 <img src="https://github.com/Moonwiing/report.1/raw/main/proj2.png" alt="Data Analysis Report Preview">
                 <div class="project-info">
@@ -373,6 +375,63 @@
                     <div style="margin-top: 1rem;">
                         <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_Visual.pdf" target="_blank" class="project-button view-btn">View</a>
                         <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_Visual.pdf" download="Kennedy_Ithagu_Maina_Visual.pdf" class="project-button download-btn">Download</a>
+                    </div>
+                </div>
+            </div>
+            <!-- New Video-Based Projects -->
+            <div class="project-card" data-aos="zoom-in">
+                <video controls>
+                    <source src="https://github.com/Moonwiing/report.1/raw/main/project3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-info">
+                    <h3>Project 3: Video Demo</h3>
+                    <p>Dynamic data analysis walkthrough.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/Moonwiing/report.1/blob/main/project3.mp4" target="_blank" class="project-button view-btn">View</a>
+                        <a href="https://github.com/Moonwiing/report.1/raw/main/project3.mp4" download="project3.mp4" class="project-button download-btn">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="zoom-in">
+                <video controls>
+                    <source src="https://github.com/Moonwiing/report.1/raw/main/project4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-info">
+                    <h3>Project 4: Visualization Reel</h3>
+                    <p>Animated dashboard showcase.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/Moonwiing/report.1/blob/main/project4.mp4" target="_blank" class="project-button view-btn">View</a>
+                        <a href="https://github.com/Moonwiing/report.1/raw/main/project4.mp4" download="project4.mp4" class="project-button download-btn">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="zoom-in">
+                <video controls>
+                    <source src="https://github.com/Moonwiing/report.1/raw/main/project5.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-info">
+                    <h3>Project 5: SQL Query Demo</h3>
+                    <p>Real-time database querying.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/Moonwiing/report.1/blob/main/project5.mp4" target="_blank" class="project-button view-btn">View</a>
+                        <a href="https://github.com/Moonwiing/report.1/raw/main/project5.mp4" download="project5.mp4" class="project-button download-btn">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="zoom-in">
+                <video controls>
+                    <source src="https://github.com/Moonwiing/report.1/raw/main/project6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <div class="project-info">
+                    <h3>Project 6: Power BI Insights</h3>
+                    <p>Interactive report exploration.</p>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/Moonwiing/report.1/blob/main/project6.mp4" target="_blank" class="project-button view-btn">View</a>
+                        <a href="https://github.com/Moonwiing/report.1/raw/main/project6.mp4" download="project6.mp4" class="project-button download-btn">Download</a>
                     </div>
                 </div>
             </div>
