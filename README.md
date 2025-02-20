@@ -315,7 +315,7 @@
         <div class="hero-content">
             <img src="https://github.com/Moonwiing/report.1/raw/main/Maina.jpeg" alt="Kennedy Maina" class="profile-img">
             <h1>Kennedy Maina</h1>
-            <p>Data Analyst | SQL | Python | Power BI</p>
+            <p>Data Analyst | SQL | Python | Power BI !R </p>
             <p class="hero-description">I am passionate about leveraging data to uncover insights that drive strategic decisions in businesses. My love for analytics stems from the thrill of transforming raw data into actionable knowledge.</p>
             <div style="margin: 1.5rem 0;">
                 <a href="https://www.linkedin.com/in/kennedy-maina-216822210" target="_blank" style="color: white; margin: 0 1rem;"><i class="fab fa-linkedin fa-2x"></i></a>
@@ -351,7 +351,7 @@
                     <h3>Data Analysis Report</h3>
                     <p>In-depth analysis of data trends and insights.</p>
                     <div style="margin-top: 1rem;">
-                        <a href="https://docs.google.com/viewer?url=https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_demo%20report.pdf" target="_blank" class="project-button view-btn">View</a>
+                        <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_demo%20report.pdf" target="_blank" class="project-button view-btn">View</a>
                         <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_demo%20report.pdf" download="Kennedy_Ithagu_Maina_demo_report.pdf" class="project-button download-btn">Download</a>
                     </div>
                 </div>
@@ -361,7 +361,7 @@
                     <h3>Visual Data Representation</h3>
                     <p>Visual storytelling through data visualization.</p>
                     <div style="margin-top: 1rem;">
-                        <a href="https://docs.google.com/viewer?url=https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_Visual.pdf" target="_blank" class="project-button view-btn">View</a>
+                        <a href="https://github.com/Moonwiing/report.1/blob/main/Kennedy%20Ithagu%20Maina_Visual.pdf" target="_blank" class="project-button view-btn">View</a>
                         <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_Visual.pdf" download="Kennedy_Ithagu_Maina_Visual.pdf" class="project-button download-btn">Download</a>
                     </div>
                 </div>
@@ -370,7 +370,7 @@
     </section>
 
     <footer class="footer">
-        <p>For collaboration opportunities, inquiries, or any other matters, feel free to contact me:</p>
+        <p>For collaboration opportunities and inquiries feel free to contact me:</p>
         <p><a href="mailto:kennedymaina573@gmail.com">kennedymaina573@gmail.com</a></p>
         <p>Or call: <a href="tel:0717999296">0717999296</a></p>
         <p>© All Rights Reserved.</p>
