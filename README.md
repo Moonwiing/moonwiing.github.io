@@ -214,8 +214,6 @@
 
         .project-button {
             display: inline-block;
-            background: var(--accent);
-            color: var(--button-text);
             padding: 0.75rem 1.5rem;
             text-decoration: none;
             border-radius: 5px;
@@ -223,9 +221,27 @@
             transition: all 0.3s ease;
             cursor: pointer;
             font-size: 1rem;
-            margin-top: 1rem;
+            margin: 0 0.5rem; /* Space between buttons */
             position: relative;
             overflow: hidden;
+        }
+
+        .view-btn {
+            background: var(--secondary);
+            color: var(--button-text);
+        }
+
+        .view-btn:hover {
+            background: #1e8c8c; /* Darker shade of secondary */
+        }
+
+        .download-btn {
+            background: var(--accent);
+            color: var(--button-text);
+        }
+
+        .download-btn:hover {
+            background: #ff5252;
         }
 
         .project-button::after {
@@ -238,10 +254,6 @@
             background: rgba(255, 255, 255, 0.2);
             transform: skewX(-25deg);
             transition: left 0.3s;
-        }
-
-        .project-button:hover {
-            background: #ff5252;
         }
 
         .project-button:hover::after {
@@ -339,14 +351,20 @@
                 <div class="project-info">
                     <h3>Data Analysis Report</h3>
                     <p>In-depth analysis of data trends and insights.</p>
-                    <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_demo%20report.pdf" class="project-button">View Project</a>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_demo%20report.pdf" target="_blank" class="project-button view-btn">View</a>
+                        <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_demo%20report.pdf" download="Kennedy_Ithagu_Maina_demo_report.pdf" class="project-button download-btn">Download</a>
+                    </div>
                 </div>
             </div>
             <div class="project-card" data-aos="zoom-in">
                 <div class="project-info">
                     <h3>Visual Data Representation</h3>
                     <p>Visual storytelling through data visualization.</p>
-                    <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_Visual.pdf" class="project-button">View Project</a>
+                    <div style="margin-top: 1rem;">
+                        <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_Visual.pdf" target="_blank" class="project-button view-btn">View</a>
+                        <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_Visual.pdf" download="Kennedy_Ithagu_Maina_Visual.pdf" class="project-button download-btn">Download</a>
+                    </div>
                 </div>
             </div>
         </div>
