@@ -1,11 +1,10 @@
-<!DOCTYPE html>
 <html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kennedy Maina | Data Analyst</title>
-    <meta name="description" content="Data Analyst specializing in SQL, Python, and Data Visualization with expertise in transforming raw data into actionable insights">
+    <meta name="description" content="Data Analyst specializing in R, SQL, Python, and Data Visualization with expertise in transforming raw data into actionable insights">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <style>
@@ -330,7 +329,7 @@
         <div class="skill-card" data-aos="fade-up">
             <i class="fas fa-database fa-3x" style="color: var(--primary);"></i>
             <h3>Data Analysis</h3>
-            <p>Python, Pandas, NumPy</p>
+            <p>R, Python, Pandas, NumPy</p>
         </div>
         <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
             <i class="fas fa-chart-line fa-3x" style="color: var(--secondary);"></i>
@@ -352,7 +351,7 @@
                     <h3>Data Analysis Report</h3>
                     <p>In-depth analysis of data trends and insights.</p>
                     <div style="margin-top: 1rem;">
-                        <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_demo%20report.pdf" target="_blank" class="project-button view-btn">View</a>
+                        <a href="https://docs.google.com/viewer?url=https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_demo%20report.pdf" target="_blank" class="project-button view-btn">View</a>
                         <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_demo%20report.pdf" download="Kennedy_Ithagu_Maina_demo_report.pdf" class="project-button download-btn">Download</a>
                     </div>
                 </div>
@@ -362,7 +361,7 @@
                     <h3>Visual Data Representation</h3>
                     <p>Visual storytelling through data visualization.</p>
                     <div style="margin-top: 1rem;">
-                        <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_Visual.pdf" target="_blank" class="project-button view-btn">View</a>
+                        <a href="https://docs.google.com/viewer?url=https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_Visual.pdf" target="_blank" class="project-button view-btn">View</a>
                         <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_Visual.pdf" download="Kennedy_Ithagu_Maina_Visual.pdf" class="project-button download-btn">Download</a>
                     </div>
                 </div>
