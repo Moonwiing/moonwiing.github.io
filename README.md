@@ -1,5 +1,4 @@
 <html lang="en" data-theme="light">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -355,9 +354,9 @@
     <section style="padding: 4rem 2rem;">
         <h2 style="text-align: center; margin-bottom: 3rem;">Featured Projects</h2>
         <div class="projects-grid">
-            <!-- Existing Image-Based Projects -->
+            <!-- Updated First Project with New Image -->
             <div class="project-card" data-aos="zoom-in">
-                <img src="https://github.com/Moonwiing/report.1/raw/main/proj2.png" alt="Data Analysis Report Preview">
+                <img src="https://github.com/Moonwiing/report.1/raw/main/Portfolio%20Development%20Project%20Continuation%20-%20Grok%20-%20Google%20Chrome%202_20_2025%208_47_57%20PM.png" alt="Data Analysis Report Preview">
                 <div class="project-info">
                     <h3>Data Analysis Report</h3>
                     <p>In-depth analysis of data trends and insights.</p>
@@ -367,6 +366,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Existing Second Project -->
             <div class="project-card" data-aos="zoom-in">
                 <img src="https://github.com/Moonwiing/report.1/raw/main/proj%201.png" alt="Visual Data Representation Preview">
                 <div class="project-info">
@@ -378,7 +378,7 @@
                     </div>
                 </div>
             </div>
-            <!-- New Video-Based Projects -->
+            <!-- Video-Based Projects -->
             <div class="project-card" data-aos="zoom-in">
                 <video controls>
                     <source src="https://github.com/Moonwiing/report.1/raw/main/project3.mp4" type="video/mp4">
