@@ -339,7 +339,7 @@
                 <div class="project-info">
                     <h3>Data Analysis Report</h3>
                     <p>In-depth analysis of data trends and insights.</p>
-                    <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_report.pdf" class="project-button">View Project</a>
+                    <a href="https://github.com/Moonwiing/report.1/raw/main/Kennedy%20Ithagu%20Maina_demo%20report.pdf" class="project-button">View Project</a>
                 </div>
             </div>
             <div class="project-card" data-aos="zoom-in">
