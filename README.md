@@ -200,10 +200,18 @@
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
             position: relative;
             transition: transform 0.3s;
+            overflow: hidden; /* Ensure image doesn’t spill out */
         }
 
         .project-card:hover {
             transform: scale(1.05);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 150px; /* Fixed height for consistency */
+            object-fit: cover; /* Crop to fit */
+            display: block;
         }
 
         .project-info {
@@ -347,6 +355,7 @@
         <h2 style="text-align: center; margin-bottom: 3rem;">Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card" data-aos="zoom-in">
+                <img src="https://github.com/Moonwiing/report.1/raw/main/proj2.png" alt="Data Analysis Report Preview">
                 <div class="project-info">
                     <h3>Data Analysis Report</h3>
                     <p>In-depth analysis of data trends and insights.</p>
@@ -357,6 +366,7 @@
                 </div>
             </div>
             <div class="project-card" data-aos="zoom-in">
+                <img src="https://github.com/Moonwiing/report.1/raw/main/proj%201.png" alt="Visual Data Representation Preview">
                 <div class="project-info">
                     <h3>Visual Data Representation</h3>
                     <p>Visual storytelling through data visualization.</p>
@@ -370,7 +380,7 @@
     </section>
 
     <footer class="footer">
-        <p>For collaboration opportunities and inquiries  feel free to contact me:</p>
+        <p>For collaboration opportunities and inquiries feel free to contact me:</p>
         <p><a href="mailto:kennedymaina573@gmail.com">kennedymaina573@gmail.com</a></p>
         <p>Or call: <a href="tel:0717999296">0717999296</a></p>
         <p>© All Rights Reserved.</p>
