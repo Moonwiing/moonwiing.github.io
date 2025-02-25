@@ -214,6 +214,23 @@
             display: block;
         }
 
+        /* Responsive Video Container */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         .project-info {
             padding: 1.5rem;
             color: var(--text-color); 
@@ -378,35 +395,33 @@
                     </div>
                 </div>
             </div>
-            <!-- Video-Based Projects -->
+            <!-- New YouTube Project 1 (R Shiny Deep Analysis) -->
             <div class="project-card" data-aos="zoom-in">
-                <video controls>
-                    <source src="https://github.com/Moonwiing/report.1/raw/main/project3.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/EOHkG-UpOIk" title="R Shiny Deep Analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
                 <div class="project-info">
-                    <h3>Project 3: Video Demo</h3>
-                    <p>Dynamic data analysis walkthrough.</p>
+                    <h3>Superstore Sales: Power BI dashboard.</h3>
+                    <p>A straightforward Power BI dashboard showcasing superstore sales data.</p>
                     <div style="margin-top: 1rem;">
-                        <a href="https://github.com/Moonwiing/report.1/blob/main/project3.mp4" target="_blank" class="project-button view-btn">View</a>
-                        <a href="https://github.com/Moonwiing/report.1/raw/main/project3.mp4" download="project3.mp4" class="project-button download-btn">Download</a>
+                        <a href="https://www.youtube.com/watch?v=EOHkG-UpOIk" target="_blank" class="project-button view-btn">View on YouTube</a>
                     </div>
                 </div>
             </div>
+            <!-- New YouTube Project 2 (Power BI Dashboard) -->
             <div class="project-card" data-aos="zoom-in">
-                <video controls>
-                    <source src="https://github.com/Moonwiing/report.1/raw/main/project4.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/7tUJEf5L4WU" title="Power BI Dashboard" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
                 <div class="project-info">
-                    <h3>Project 4: Visualization Reel</h3>
-                    <p>Animated dashboard showcase.</p>
+                    <h3>Superstore Sales: Power BI Dashboard</h3>
+                    <p>In-depth analysis featuring spatial analysis, forecasting, and interactive R Shiny visualizations.</p>
                     <div style="margin-top: 1rem;">
-                        <a href="https://github.com/Moonwiing/report.1/blob/main/project4.mp4" target="_blank" class="project-button view-btn">View</a>
-                        <a href="https://github.com/Moonwiing/report.1/raw/main/project4.mp4" download="project4.mp4" class="project-button download-btn">Download</a>
+                        <a href="https://www.youtube.com/watch?v=7tUJEf5L4WU" target="_blank" class="project-button view-btn">View on YouTube</a>
                     </div>
                 </div>
             </div>
+            <!-- Remaining Video Projects -->
             <div class="project-card" data-aos="zoom-in">
                 <video controls>
                     <source src="https://github.com/Moonwiing/report.1/raw/main/project5.mp4" type="video/mp4">
