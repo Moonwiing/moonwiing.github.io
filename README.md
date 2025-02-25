@@ -395,7 +395,7 @@
                     </div>
                 </div>
             </div>
-            <!-- New YouTube Project 1 (R Shiny Deep Analysis) -->
+            <!-- New YouTube Project 1 (Power BI Dashboard) -->
             <div class="project-card" data-aos="zoom-in">
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/EOHkG-UpOIk" title="R Shiny Deep Analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -408,13 +408,13 @@
                     </div>
                 </div>
             </div>
-            <!-- New YouTube Project 2 (Power BI Dashboard) -->
+            <!-- New YouTube Project 2 (R Shiny Deep Analysis)  -->
             <div class="project-card" data-aos="zoom-in">
                 <div class="video-container">
                     <iframe src="https://www.youtube.com/embed/7tUJEf5L4WU" title="Power BI Dashboard" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="project-info">
-                    <h3>Superstore Sales: Power BI Dashboard</h3>
+                    <h3>Superstore Sales: R shiny dashboard.</h3>
                     <p>In-depth analysis featuring spatial analysis, forecasting, and interactive R Shiny visualizations.</p>
                     <div style="margin-top: 1rem;">
                         <a href="https://www.youtube.com/watch?v=7tUJEf5L4WU" target="_blank" class="project-button view-btn">View on YouTube</a>
