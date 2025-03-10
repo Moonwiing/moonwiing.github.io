@@ -395,16 +395,16 @@
                     </div>
                 </div>
             </div>
-            <!-- New YouTube Project 1 (Power BI Dashboard) -->
+            <!-- Updated YouTube Project 1 (Power BI Dashboard) -->
             <div class="project-card" data-aos="zoom-in">
                 <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/EOHkG-UpOIk" title="R Shiny Deep Analysis" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/ZPM3umY2XiA" title="Superstore Sales: Power BI dashboard" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="project-info">
                     <h3>Superstore Sales: Power BI dashboard.</h3>
                     <p>A straightforward Power BI dashboard showcasing superstore sales data.</p>
                     <div style="margin-top: 1rem;">
-                        <a href="https://www.youtube.com/watch?v=EOHkG-UpOIk" target="_blank" class="project-button view-btn">View on YouTube</a>
+                        <a href="https://www.youtube.com/watch?v=ZPM3umY2XiA" target="_blank" class="project-button view-btn">View on YouTube</a>
                     </div>
                 </div>
             </div>
@@ -428,8 +428,8 @@
                     Your browser does not support the video tag.
                 </video>
                 <div class="project-info">
-                    <h3>Project 5: SQL Query Demo</h3>
-                    <p>Real-time database querying.</p>
+                    <h3>Project 5: COMMING SOON</h3>
+                    <p>REAL TIME EXCEL-SQL-R-POWER BI PIPELINES- for data analysis by just pressing a button in seconds.</p>
                     <div style="margin-top: 1rem;">
                         <a href="https://github.com/Moonwiing/report.1/blob/main/project5.mp4" target="_blank" class="project-button view-btn">View</a>
                         <a href="https://github.com/Moonwiing/report.1/raw/main/project5.mp4" download="project5.mp4" class="project-button download-btn">Download</a>
@@ -442,8 +442,8 @@
                     Your browser does not support the video tag.
                 </video>
                 <div class="project-info">
-                    <h3>Project 6: Power BI Insights</h3>
-                    <p>Interactive report exploration.</p>
+                    <h3>Project 6: COMMING SOON</h3>
+                    <p>Creating a Data imputation model to determine the impacts by percentage and an automatic data imputation ML.</p>
                     <div style="margin-top: 1rem;">
                         <a href="https://github.com/Moonwiing/report.1/blob/main/project6.mp4" target="_blank" class="project-button view-btn">View</a>
                         <a href="https://github.com/Moonwiing/report.1/raw/main/project6.mp4" download="project6.mp4" class="project-button download-btn">Download</a>
